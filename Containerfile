@@ -7,6 +7,9 @@ COPY build_files /
 # Base Image
 FROM ${BASE_IMAGE} AS main
 
+LABEL org.containers.bootc.rootfs=/
+
+
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
